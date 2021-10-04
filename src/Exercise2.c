@@ -10,28 +10,25 @@ Ex:
 */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+int main
+	{ 
+		int a=[10]; 
+	for(int i = 0; i < 5; i++)
 
-int main(int argc, char *argv[]) {
-	//testing variable, applying it to your algorithm for auto-evaluating
-	argc--;
-	int testcase[argc],i;
-	for(i=0; i<argc;i++){
-		if(atoi(argv[i+1])==0){
-			argc = i;
-			break;
-		}
-		else
-			testcase[i] = atoi(argv[i+1]);
 	}
-	//Your codes here
-	int max = testcase[0];
-	int min = testcase[0];
-	for(int j = 1; j <= i; ++j)
+		printf("input [%d] =", i);
+		scanf("%d", &a[i]);
+		printf("cac phan tu can tim min max: ");
+		for(int i = 0; i < 5; i++)
+		printf("%4d", a[1]);
+		int max = a[0];
+	int min = a[0];
+	for (int j = 0; j < 5; ++j)
 	{
-		max = max > testcase[j] ? max : testcase[j];
-		min = min < testcase[j] ? min : testcase[j];
+		if (max > a[i])
+		max = a[i];
+		else if (min < a[i])
+		min = a[i];
 	}
 	printf("\nMax : %d", max);
 	printf("\nMin : %d", min);
