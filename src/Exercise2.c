@@ -30,8 +30,8 @@ int main(int argc, char *argv[]) {
 	int min = testcase[0];
 	for(int j = 1; j <= i; ++j)
 	{
-	max = max > testcase[j] ? max : testcase[j];
-	min = min < testcase[j] ? min : testcase[j];
+		max = max > testcase[j] ? max : testcase[j];
+		min = min < testcase[j] ? min : testcase[j];
 	}
 	printf("\nMax : %d", max);
 	printf("\nMin : %d", min);
